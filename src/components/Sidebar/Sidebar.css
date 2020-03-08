@@ -1,0 +1,27 @@
+.sidebar {
+    height: calc(100vh - 80px);
+    border-right: 1px solid #f1f1f1;
+    background-color: #fafafa;
+}
+
+.main-list {
+    margin: 0;
+    padding-left: 42px;
+    padding-top: 20px;
+}
+
+.main-list li {
+    min-height: 24px;
+    color: #333;
+    list-style: none;
+    cursor: pointer;
+    padding: 5px 16px 5px 5px;
+}
+
+.main-list li:hover {
+    background-color: #fff;
+}
+
+.icon {
+    margin-right: 10px;
+}

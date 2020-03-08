@@ -1,0 +1,13 @@
+.todo-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 21px;
+}
+
+.todo-item input {
+    margin-right: 10px;
+}
+
+.item-checked {
+    text-decoration: line-through;
+}
