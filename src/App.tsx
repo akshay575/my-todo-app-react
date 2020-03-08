@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import Todo from './components/Todo/Todo';
+import Header from './components/Header/Header';
 import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <Header />
+      <div className="row">
+        <div className="col-3">
+          <Sidebar />
+        </div>
+        <div className="col-9 todolist">
+          <Todo />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
