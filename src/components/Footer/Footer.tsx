@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import { Navbar } from 'react-bootstrap';
-import logo from './../../../src/logo.svg';
 
 export default class Footer extends Component {
     footerStyles = {
