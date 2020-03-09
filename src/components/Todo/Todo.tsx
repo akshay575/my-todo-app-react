@@ -58,7 +58,7 @@ class Todo extends Component<{}, state> {
     }
     renderTodoItems() {
         return this.state.todos.map((item, i) => {
-            return <TodoItem {...item} key={i} onCheck={this.handleOnCheck} onEditTodo={this.handleEditTodo} onDeleteTodo={this.handleDelete} />
+            return <TodoItem {...item} key={i} index={i} onCheck={this.handleOnCheck} onEditTodo={this.handleEditTodo} onDeleteTodo={this.handleDelete} />
         })
     }
     render() {
