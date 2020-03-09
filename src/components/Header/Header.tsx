@@ -11,7 +11,7 @@ export default class Header extends Component {
         return (
             <>
                 <Navbar bg="dark" variant="dark" style={this.headerStyles}>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="/">
                     <img
                         alt=""
                         src={logo}

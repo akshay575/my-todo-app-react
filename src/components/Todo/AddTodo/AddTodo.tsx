@@ -24,33 +24,34 @@ export default class AddTodo extends Component<props, state> {
             isAddItem: false
         };
     }
+    // update input state when user enters text
     onChange = (event: any) => {
-        console.log('on change', event.target.value);
         this.setState({
             content: event.target.value
         })
     }
-    // enable add todo textbox
+    // enables add todo action
     onAddTodo = () => {
         this.setState({
             isAddItem: true
         });
     }
+    // handle cancel todo action
     onCancel = () => {
         this.setState({
             isAddItem: false
         });
         this.props.onCancelTodo();
     }
+    // handle update todo action
     onSaveTodo = () => {
-        console.log('on save click');
         this.props.onAddTodo(this.state.content);
         this.setState({
             content: ''
         })
     }
+    // handles edit todo action
     onEditTodo = () => {
-        console.log('on edit click');
         this.props.onEditTodo(this.state.content);
         this.setState({
             content: ''
@@ -64,7 +65,6 @@ export default class AddTodo extends Component<props, state> {
         )
     }
     renderAddTodo() {
-        console.log('Clicked');
         return (
             <React.Fragment>
                 <div className="col-12">

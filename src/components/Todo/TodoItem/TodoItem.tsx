@@ -12,42 +12,46 @@ interface props {
 };
 
 interface state {
-    isEdit: boolean,
-    content: string
+    isEdit: boolean
 }
 
 export default class TodoItem extends Component<props, state> {
     constructor(props: any) {
         super(props);
         this.state = {
-            isEdit: false,
-            content: this.props.content
+            isEdit: false
         }
     }
+    // handles todo complete status
     onChange = () => {
         this.props.onCheck(this.props.index, !this.props.isDone)
     }
+    // enables todo edit action
     handleClick = () => {
         this.setState({
             isEdit: true
         })
     }
+    // handles todo cancel action
     handleCancel = () => {
         this.setState({
             isEdit: false
         })
     }
+    // handles todo edit action
     handleEdit = (content: string) => {
         this.props.onEditTodo(this.props.index, content);
         this.handleCancel();
     }
+    // handles todo delete action
     handleDelete = () => {
         this.props.onDeleteTodo(this.props.index);
         this.handleCancel();
     }
     renderAddorEdit() {
         if(this.state.isEdit) {
-            return <AddTodo onAddTodo={null} onEditTodo={this.handleEdit} onCancelTodo={this.handleCancel} onDeleteTodo={this.handleDelete} isEdit={true} content={this.state.content} />
+            console.log(this.props.content);
+            return <AddTodo onAddTodo={null} onEditTodo={this.handleEdit} onCancelTodo={this.handleCancel} onDeleteTodo={this.handleDelete} isEdit={true} content={this.props.content} />
         } else {
             return (
                 <div className="todo-item" >

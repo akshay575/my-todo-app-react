@@ -32,7 +32,6 @@ export default class App extends Component<{}, state> {
     this.setState({
       filterBy
     })
-    console.log('filterBy', filterBy);
   }
   render() {
     return (
