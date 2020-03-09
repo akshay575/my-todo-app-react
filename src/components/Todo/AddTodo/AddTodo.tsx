@@ -68,7 +68,7 @@ export default class AddTodo extends Component<props, state> {
         return (
             <React.Fragment>
                 <div className="col-12">
-                    <input className="input-todo" type="text" value={this.state.content} onChange={this.onChange} placeholder="Add a todo item..." />
+                    <input autoFocus className="input-todo" type="text" value={this.state.content} onChange={this.onChange} placeholder="Add a todo item..." />
                 </div>
                 <div className="col-8 btn-group-todo">
                     {this.props.isEdit ? (

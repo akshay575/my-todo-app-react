@@ -1,7 +1,7 @@
 .sidebar {
     height: calc(100vh - 80px);
-    border-right: 1px solid #f1f1f1;
-    background-color: #fafafa;
+    border-right: 1px solid #f3f3f3;
+    background-color: #f1f1f1;
 }
 
 .main-list {

@@ -46,7 +46,6 @@ export default class TodoItem extends Component<props, state> {
         this.handleCancel();
     }
     renderAddorEdit() {
-        console.log('render add or edit');
         if(this.state.isEdit) {
             return <AddTodo onAddTodo={null} onEditTodo={this.handleEdit} onCancelTodo={this.handleCancel} onDeleteTodo={this.handleDelete} isEdit={true} content={this.state.content} />
         } else {
