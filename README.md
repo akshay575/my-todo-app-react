@@ -1,7 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Todo List Application in React
+
+![Screenshot](screenshot.png)
+
+**Features:**
+* Add todo
+* Update todo
+* Delete todo
+* Filter todos
+* View all todos
 
 ## Demo
 [Click here for demo](https://jpm-todo-react.herokuapp.com)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
